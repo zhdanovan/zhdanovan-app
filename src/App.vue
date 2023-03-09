@@ -5,7 +5,6 @@
   </nav>
   <router-view />
 </template>
-
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -28,3 +27,15 @@ nav {
   }
 }
 </style>
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import { RouterLink, RouterView } from "vue-router";
+
+@Options({
+  components: {
+    RouterLink,
+    RouterView,
+  },
+})
+export default class App extends Vue {}
+</script>
